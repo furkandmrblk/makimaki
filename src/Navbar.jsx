@@ -28,17 +28,17 @@ export default function Navbar() {
         </a>
 
         <div className="nav__links hide-for-mobile">
-          <a href="#">MENÜ</a>
-          <a href="#">KONTAKT</a>
+          <a href="/">MENÜ</a>
+          <a href="/">KONTAKT</a>
           <button className="nav__cta" type="button">
             BESTELLEN
           </button>
         </div>
       </nav>
       <div className={hamburgerMenu}>
-        <a href="#">Menü</a>
-        <a href="#">Kontakt</a>
-        <a href="#">Bestellen</a>
+        <a href="/">Menü</a>
+        <a href="/">Kontakt</a>
+        <a href="/">Bestellen</a>
       </div>
     </div>
   );
