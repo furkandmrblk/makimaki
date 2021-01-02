@@ -21,11 +21,11 @@ export default function Navbar() {
           </a>
         </div>
 
-        <a onClick={() => setOpen(!open)} className={hamburgerClasses}>
+        <div onClick={() => setOpen(!open)} className={hamburgerClasses}>
           <span></span>
           <span></span>
           <span></span>
-        </a>
+        </div>
 
         <div className="nav__links hide-for-mobile">
           <a href="/">MENÜ</a>
