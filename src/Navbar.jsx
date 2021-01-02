@@ -21,7 +21,7 @@ export default function Navbar() {
           </a>
         </div>
 
-        <a onClick={() => setOpen(!open)} href="#" className={hamburgerClasses}>
+        <a onClick={() => setOpen(!open)} className={hamburgerClasses}>
           <span></span>
           <span></span>
           <span></span>
