@@ -1,0 +1,164 @@
+.footer {
+  overflow-x: hidden;
+  padding: 6.25rem 4.5625rem 3rem 4.5625rem;
+  &__grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 17.75rem 14.9375rem 14.9375rem 14.9375rem 11.375rem;
+    grid-template-rows: 2.604rem 2.604rem 2.604rem;
+    grid-template-areas:
+      'logo link1 link2 link3 buttons '
+      'logo link1 link2 link3 buttons'
+      'copyright link1 link2 link3 buttons';
+
+    @include breakpoint-down(medium) {
+      grid-template-columns: 10rem 6rem 6rem 6rem 5rem;
+      grid-template-rows: 2.604rem 2.604rem 2.604rem;
+      grid-auto-flow: 'column dense';
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+    @include breakpoint-down(medium) {
+      font-size: 1rem;
+    }
+  }
+
+  &__copyright {
+    grid-area: copyright;
+    font-size: 1.25rem;
+
+    @include breakpoint-down(medium) {
+      font-size: 0.75rem;
+    }
+  }
+
+  &__link1 {
+    grid-area: link1;
+    text-align: left;
+
+    :not(:last-child) {
+      padding-bottom: 1rem;
+    }
+
+    &-1 {
+      font-size: 1.5rem;
+      @include breakpoint-down(medium) {
+        padding-top: 1.5rem;
+        font-size: 1rem;
+      }
+    }
+    &-2 {
+      font-size: 1.25rem;
+      @include breakpoint-down(medium) {
+        font-size: 0.85rem;
+      }
+    }
+    &-3 {
+      font-size: 1.25rem;
+      @include breakpoint-down(medium) {
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  &__link2 {
+    grid-area: link2;
+
+    :not(:last-child) {
+      padding-bottom: 1rem;
+    }
+
+    &-1 {
+      font-size: 1.5rem;
+      @include breakpoint-down(medium) {
+        padding-top: 1.5rem;
+        font-size: 1rem;
+      }
+    }
+    &-2 {
+      font-size: 1.25rem;
+      @include breakpoint-down(medium) {
+        font-size: 0.85rem;
+      }
+    }
+    &-3 {
+      font-size: 1.25rem;
+      @include breakpoint-down(medium) {
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  &__link3 {
+    grid-area: link3;
+
+    :not(:last-child) {
+      padding-bottom: 1rem;
+    }
+
+    &-1 {
+      font-size: 1.5rem;
+      @include breakpoint-down(medium) {
+        padding-top: 1.5rem;
+        font-size: 1rem;
+      }
+    }
+    &-2 {
+      font-size: 1.25rem;
+      @include breakpoint-down(medium) {
+        font-size: 0.85rem;
+      }
+    }
+    &-3 {
+      font-size: 1.25rem;
+      @include breakpoint-down(medium) {
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  &__buttons {
+    grid-area: buttons;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      margin-bottom: 0.875rem;
+    }
+
+    &-1 {
+      background-color: $white;
+      color: #000;
+      height: 3.25rem;
+      width: 11.375rem;
+      font-size: 1.25rem;
+      font-weight: 500;
+      @include breakpoint-down(medium) {
+        margin-top: 1.5rem;
+        height: 3rem;
+        width: 9rem;
+        font-size: 1rem;
+      }
+    }
+
+    &-2 {
+      background-color: $orange;
+      color: $white;
+      height: 3.25rem;
+      width: 11.375rem;
+      font-size: 1.25rem;
+      font-weight: 500;
+      @include breakpoint-down(medium) {
+        height: 3rem;
+        width: 9rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}

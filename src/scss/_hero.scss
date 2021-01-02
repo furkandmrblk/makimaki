@@ -1,0 +1,48 @@
+.hero {
+  &__img {
+    z-index: -1;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url('/src/images/hero0.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 63.5rem;
+    margin-top: -10.5rem;
+
+    @include breakpoint-down(small) {
+      height: 54rem;
+    }
+  }
+
+  &__title {
+    position: relative;
+    text-align: center;
+    padding-top: 18.9375rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 13rem;
+
+    @include breakpoint-down(medium) {
+      font-size: 7.5rem;
+    }
+
+    @include breakpoint-down(small) {
+      font-size: 3.4rem;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.125rem;
+
+    @include breakpoint-down(medium) {
+      font-size: 2.3rem;
+    }
+
+    @include breakpoint-down(small) {
+      font-size: 1.4rem;
+    }
+  }
+}

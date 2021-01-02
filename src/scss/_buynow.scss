@@ -1,0 +1,55 @@
+.buynow {
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.05)),
+      url('/src/images/buynow.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 34.625rem;
+
+    @include breakpoint-down(small) {
+      margin-top: 11rem;
+    }
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1.1rem;
+
+    @include breakpoint-down(small) {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 3.8125rem;
+
+    @include breakpoint-down(small) {
+      text-align: center;
+      font-size: 1.3rem;
+    }
+  }
+
+  button {
+    background-color: $orange;
+    height: 5.9375rem;
+    width: 19.75rem;
+    font-size: 2.625rem;
+    font-weight: 500;
+
+    @include breakpoint-down(small) {
+      height: 4rem;
+      width: 12rem;
+      font-size: 2rem;
+    }
+  }
+}

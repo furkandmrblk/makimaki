@@ -1,0 +1,139 @@
+.info {
+  .infoContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6.25rem;
+
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
+  }
+
+  &__maps {
+    order: 1;
+    background-image: url('/src/images/googlemaps.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 26.3125rem;
+    width: 40.375rem;
+    border-radius: 4px;
+
+    @include breakpoint-down(medium) {
+      margin: 0 auto;
+      height: 19rem;
+      width: 26rem;
+    }
+
+    @include breakpoint-down(small) {
+      height: 13rem;
+      width: 20rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__infos {
+    order: 2;
+    flex-direction: column;
+    margin-left: 4.0625rem;
+    margin-top: 2rem;
+    text-align: center;
+
+    @include breakpoint-down(medium) {
+      margin: 4rem auto 0;
+      height: 19rem;
+      width: 26rem;
+    }
+
+    @include breakpoint-down(small) {
+      text-align: center;
+      height: 13rem;
+      width: 20rem;
+    }
+
+    .info__title {
+      font-size: 2.625rem;
+      margin-bottom: 2.6875rem;
+    }
+
+    .info__adress {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 1.1875rem;
+
+      &Icon {
+        background-image: url('/src/images/googleMapsIcon.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 6.75rem;
+        width: 6.75rem;
+
+        @include breakpoint-down(small) {
+          height: 4.7rem;
+          width: 4.7rem;
+        }
+      }
+
+      &Street {
+        background-color: $orange;
+        margin-left: 2.0625rem;
+        font-size: 1.625rem;
+        padding: 1.3125rem 0.75rem;
+        height: 7.0625rem;
+        width: 27.625rem;
+        border-radius: 4px;
+
+        @include breakpoint-down(small) {
+          font-size: 1.083rem;
+          height: 4.7rem;
+          width: 18.41rem;
+        }
+      }
+    }
+
+    .info__opentime {
+      display: flex;
+      flex-direction: row;
+      &Icon {
+        background-image: url('/src/images/open.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 6.75rem;
+        width: 6.75rem;
+
+        @include breakpoint-down(small) {
+          height: 4.7rem;
+          width: 4.7rem;
+        }
+      }
+
+      &Time {
+        background-color: $orange;
+        padding: 0rem 0.75rem;
+        margin-left: 2.0625rem;
+        height: 7.0625rem;
+        width: 27.625rem;
+        border-radius: 4px;
+        background-image: url('/src/images/öffnungszeit.png');
+        background-size: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include breakpoint-down(medium) {
+          background-size: 97%;
+        }
+
+        @include breakpoint-down(small) {
+          height: 4.7rem;
+          width: 18.41rem;
+          background-size: 97%;
+        }
+      }
+    }
+  }
+}
