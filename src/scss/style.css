@@ -830,6 +830,16 @@ button:hover {
   }
 }
 
+@media (max-width: 39.9375em) {
+  .footer__grid {
+    -ms-grid-columns: 8rem 8rem;
+        grid-template-columns: 8rem 8rem;
+    -ms-grid-rows: (2.604rem)[9];
+        grid-template-rows: repeat(9, 2.604rem);
+        grid-template-areas: 'link1 link2' 'link1 link2' 'link1 link2' 'link3 buttons' 'link3 buttons' 'link3 buttons' 'logo logo' 'logo logo' 'copyright copyright';
+  }
+}
+
 .footer__logo {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;

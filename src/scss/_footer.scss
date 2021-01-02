@@ -16,6 +16,21 @@
       grid-template-rows: 2.604rem 2.604rem 2.604rem;
       grid-auto-flow: 'column dense';
     }
+
+    @include breakpoint-down(small) {
+      grid-template-columns: 8rem 8rem;
+      grid-template-rows: repeat(9, 2.604rem);
+      grid-template-areas:
+        'link1 link2'
+        'link1 link2'
+        'link1 link2'
+        'link3 buttons'
+        'link3 buttons'
+        'link3 buttons'
+        'logo logo'
+        'logo logo'
+        'copyright copyright';
+    }
   }
 
   &__logo {
