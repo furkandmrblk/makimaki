@@ -28,10 +28,10 @@ export default function Navbar() {
         </div>
 
         <div className="nav__links hide-for-mobile">
-          <a href="/">MENÜ</a>
-          <a href="/">KONTAKT</a>
+          <a href="/">Menü</a>
+          <a href="/">Kontakt</a>
           <button className="nav__cta" type="button">
-            BESTELLEN
+            Bestellen
           </button>
         </div>
       </nav>

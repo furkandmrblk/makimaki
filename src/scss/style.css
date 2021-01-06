@@ -23,10 +23,6 @@ body {
   overflow-x: hidden;
 }
 
-body.modal-active {
-  overflow: hidden;
-}
-
 a,
 a:visited,
 a:hover {
@@ -148,6 +144,7 @@ button:hover {
 }
 
 .nav .open.nav__menu {
+  z-index: 2;
   right: 0;
   visibility: visible;
 }
@@ -156,6 +153,12 @@ button:hover {
   .nav .open.nav__menu {
     right: -100%;
   }
+}
+
+.nav__cta {
+  padding: 3px 8px;
+  font-size: 1.2rem;
+  border-radius: 2px;
 }
 
 .nav__logo {
@@ -221,7 +224,7 @@ button:hover {
 
 .nav__links a {
   position: relative;
-  font-size: 1.875rem;
+  font-size: 1.2rem;
   color: #fff;
 }
 
