@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Info() {
   return (
-    <div className="info">
+    <div className="info" id="contact-us">
       <div className="container container--pall">
         <div className="infoContainer">
           <div className="info__maps"></div>
