@@ -28,7 +28,7 @@ export default function Navbar() {
         </div>
 
         <div className="nav__links hide-for-mobile">
-          <a href="/">Menü</a>
+          <a href="/menu">Menü</a>
           <a href="/">Kontakt</a>
           <button className="nav__cta" type="button">
             Bestellen
@@ -36,7 +36,7 @@ export default function Navbar() {
         </div>
       </nav>
       <div className={hamburgerMenu}>
-        <a href="/">Menü</a>
+        <a href="/menu">Menü</a>
         <a href="/">Kontakt</a>
         <a href="/">Bestellen</a>
       </div>

@@ -17,7 +17,12 @@
       grid-auto-flow: 'column dense';
     }
 
+    @include breakpoint-down(large) {
+      width: 650px;
+    }
+
     @include breakpoint-down(small) {
+      width: 100%;
       grid-template-columns: 8rem 8rem;
       grid-template-rows: repeat(9, 2.604rem);
       grid-template-areas:

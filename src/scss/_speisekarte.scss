@@ -1,0 +1,468 @@
+.speisekarte {
+  display: flex;
+  &__title {
+    position: relative;
+    margin-top: 4.75rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 7.5rem;
+
+    @include breakpoint-down(medium) {
+      font-size: 4rem;
+    }
+
+    @include breakpoint-down(small) {
+      font-size: 3.4rem;
+    }
+  }
+
+  &__line {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &__inline {
+      margin-top: 1.1rem;
+      width: 54.53125rem;
+      height: 0px;
+      border: 1px solid #ffffff;
+
+      @include breakpoint-down(medium) {
+        width: 20rem;
+      }
+
+      @include breakpoint-down(small) {
+        width: 18rem;
+      }
+    }
+  }
+
+  &__menu {
+    display: grid;
+    margin-top: 7.25rem;
+    height: 67.75rem;
+    width: 80.75rem;
+    background-color: #292929;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+    grid-template-rows: repeat(7, 14.285%);
+    grid-template-areas:
+      'title1 title2 title3'
+      'food11 food21 food31'
+      'food12 food22 food32'
+      'food13 food23 food33'
+      'food14 food24 food34'
+      'food15 food25 food35'
+      'food16 food26 food36';
+
+    @include breakpoint-down(large) {
+      height: 60rem;
+      width: 60rem;
+    }
+
+    @include breakpoint-down(medium) {
+      height: 60rem;
+      width: 45rem;
+    }
+
+    @include breakpoint-down(small) {
+      height: 196.875rem;
+      max-width: 400px;
+      grid-template-columns: 375px;
+      grid-template-rows: repeat(21, 150px);
+      grid-template-areas:
+        'title1 '
+        'food11 '
+        'food12 '
+        'food13 '
+        'food14 '
+        'food15 '
+        'food16 '
+        'title2 '
+        'food21 '
+        'food22 '
+        'food23 '
+        'food24 '
+        'food25 '
+        'food26 '
+        'title3 '
+        'food31 '
+        'food32 '
+        'food33 '
+        'food34 '
+        'food35 '
+        'food36 ';
+    }
+
+    &__title1 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      text-transform: uppercase;
+      grid-area: title1;
+
+      @include breakpoint-down(large) {
+        font-size: 2rem;
+        text-align: left;
+        padding-left: 2rem;
+        padding-top: 1rem;
+      }
+
+      @include breakpoint-down(medium) {
+        font-size: 1.7rem;
+        text-align: left;
+        padding-left: 2rem;
+        padding-top: 1rem;
+      }
+
+      @include breakpoint-down(small) {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        text-align: left;
+        font-size: 2rem;
+      }
+    }
+    &__title2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      text-transform: uppercase;
+      grid-area: title2;
+
+      @include breakpoint-down(large) {
+        font-size: 2rem;
+        text-align: left;
+        padding-left: 2rem;
+        padding-top: 1rem;
+      }
+
+      @include breakpoint-down(medium) {
+        font-size: 1.7rem;
+        text-align: left;
+        padding-left: 2rem;
+        padding-top: 1rem;
+      }
+      @include breakpoint-down(small) {
+        padding-left: 2rem;
+        text-align: left;
+        font-size: 2rem;
+      }
+    }
+    &__title3 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      text-transform: uppercase;
+      grid-area: title3;
+
+      @include breakpoint-down(large) {
+        font-size: 2rem;
+        text-align: left;
+        padding-left: 2rem;
+        padding-top: 1rem;
+      }
+
+      @include breakpoint-down(medium) {
+        font-size: 1.7rem;
+        text-align: left;
+        padding-left: 2rem;
+        padding-top: 1rem;
+      }
+      @include breakpoint-down(small) {
+        padding-left: 2rem;
+        text-align: left;
+        font-size: 2rem;
+      }
+    }
+
+    &__menu1__food1 {
+      padding-left: 2.125rem;
+      grid-area: food11;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu1__food2 {
+      padding-left: 2.125rem;
+      grid-area: food12;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu1__food3 {
+      padding-left: 2.125rem;
+      grid-area: food13;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu1__food4 {
+      padding-left: 2.125rem;
+      grid-area: food14;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu1__food5 {
+      padding-left: 2.125rem;
+      grid-area: food15;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu1__food6 {
+      padding-left: 2.125rem;
+      grid-area: food16;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+
+    &__menu2__food1 {
+      padding-left: 2.125rem;
+      grid-area: food21;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu2__food2 {
+      padding-left: 2.125rem;
+      grid-area: food22;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu2__food3 {
+      padding-left: 2.125rem;
+      grid-area: food23;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu2__food4 {
+      padding-left: 2.125rem;
+      grid-area: food24;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu2__food5 {
+      padding-left: 2.125rem;
+      grid-area: food25;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu2__food6 {
+      padding-left: 2.125rem;
+      grid-area: food26;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+
+    &__menu3__food1 {
+      padding-left: 2.125rem;
+      grid-area: food31;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu3__food2 {
+      padding-left: 2.125rem;
+      grid-area: food32;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu3__food3 {
+      padding-left: 2.125rem;
+      grid-area: food33;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu3__food4 {
+      padding-left: 2.125rem;
+      grid-area: food34;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu3__food5 {
+      padding-left: 2.125rem;
+      grid-area: food35;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+    &__menu3__food6 {
+      padding-left: 2.125rem;
+      grid-area: food36;
+      &__title {
+        font-weight: 700;
+        color: $lightOrange;
+        font-size: 20px;
+      }
+      &__text {
+        font-size: 18px;
+        width: 300px;
+        @include breakpoint-down(medium) {
+          width: 160px;
+        }
+      }
+    }
+  }
+}
